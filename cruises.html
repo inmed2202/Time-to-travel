@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="/assets/css/stylesheet.css?v=1">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+  <link rel="stylesheet" href="cruises.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://js.arcgis.com/4.26/"></script>
+    <title>Vacation time</title>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href='index.html' class="menu-nav"><i class="fas fa-home"></i></a></li>
+          <li><a href='gallery.html' class="menu-nav">Gallery</a>
+            <ul>          
+              <li><a href="australia.html" class="menu-nav">Australia</a></li>
+              <li><a href="bali.html" class="menu-nav">Bali</a></li>
+              <li><a href="canada.html" class="menu-nav">Canada</a></li>
+              <li><a href="caraibes.html" class="menu-nav">Caraibes</a></li>
+              <li><a href="dominikana.html" class="menu-nav">Dominikana</a></li>
+              <li><a href="kuba.html" class="menu-nav">Kuba</a></li>
+              <li><a href="malta.html" class="menu-nav">Malta</a></li>
+              <li><a href="philippines.html" class="menu-nav">Philippines</a></li>
+              <li><a href="thailand.html" class="menu-nav">Thailand</a></li>
+              <li><a href="usa.html" class="menu-nav">USA</a></li>  
+            </ul>
+          </li>
+          <li><a href='cruises.html' class="menu-nav">Cruises</a></li>
+          <li><a href='tours.html' class="menu-nav">Tours</a></li>
+          <li><a href='blog.html' class="menu-nav">Blog</a></li>
+        </ul>
+      </nav>
+
+      <article style="background-image: url(Images/article-background.jpg); padding-top: 88vh; background-repeat: no-repeat;"> 
+        <h3 class="cruises-on-image-header" style="display: flow-root;Text-align: center;font-size: 56px;color: rgba(230, 230, 230, 0.8);font-weight: 700;margin-top: -30%;margin-bottom: 25%;text-shadow: 0 0 0.2em #87f, 0 0 0.2em #87f, 0 0 0.2em #87f;">Why do we love the sea? It is because it has some potent power to make us think things we like to think.</h3>       
+           <div class="dropdowns-background" style="background: linear-gradient(60deg, #3c5194, #262231b6); filter: drop-shadow(10px 20px 5px rgba(0,0,0,0.25)); margin-top: -15%;">
+           <p style="text-align: center; font-size: 40px; font-weight: 700; color:rgb(198, 228, 241); padding-top: 2%;">Enjoy Your Vacation With Us</p>
+           <p style="text-align: center; font-size: 32px; font-weight: 700; color:rgb(198, 228, 241);">Destinations</p>
+           
+             <div class="dropdown">
+             <div class="select">
+               <span class="selected" id="myDropdown" onclick="myFunction()">Poland</span>
+               <div class="caret"></div>
+             </div>
+             <ul class="destination" id="from">
+               <li>Australia</li>
+               <li>Bali</li>
+               <li>Canada</li>
+               <li>Caraibes</li>
+               <li>Dominikana</li>
+               <li>Kuba</li>
+               <li>Malta</li>
+               <li class="active">Poland</li>
+               <li>Philippines</li>
+               <li>Thailand</li>
+               <li>USA</li>
+             </ul>
+           </div>
+   
+           <div class="dropdown">
+             <div class="select">
+               <span class="selected" id="myDropdown" onclick="myFunction()">Malta</span>
+               <div class="caret"></div>
+             </div>
+             <ul class="destination" id="where">
+               <li>Australia</li>
+               <li>Bali</li>
+               <li>Canada</li>
+               <li>Caraibes</li>
+               <li>Dominikana</li>
+               <li>Kuba</li>
+               <li class="active">Malta</li>
+               <li>Poland</li>
+               <li>Philippines</li>
+               <li>Thailand</li>
+               <li>USA</li>
+             </ul>
+           </div>
+   
+           <button type="submit" class="search">Szukaj</button>
+           </div>
+   
+       </article>
+
+      <section>
+        <div id="header">
+          <h1 class="top">Top Cruises</h1>
+            </div>
+          <div class="container">
+
+          <div class="card">
+            <div class="card-image">
+              <img src="Images/Cruises/1.webp">
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Cruises</p>
+              <h2 class="card-title">Lorem ipsum dolor </h2>
+              <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+            <div class="card-price">$560</div>
+          </div>
+
+            <div class="card">
+            <div class="card-image">
+              <img src="Images/Cruises/2.webp">
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Cruises</p>
+              <h2 class="card-title">Lorem ipsum dolor </h2>
+              <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+            <div class="card-price">$839</div>
+          </div>
+
+            <div class="card">
+            <div class="card-image">
+              <img src="Images/Cruises/3.webp">
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Cruises</p>
+              <h2 class="card-title">Lorem ipsum dolor </h2>
+              <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+            <div class="card-price">$609</div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="Images/Cruises/4.webp">
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Cruises</p>
+              <h2 class="card-title">Lorem ipsum dolor </h2>
+              <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+            <div class="card-price">$956</div>
+          </div>
+
+            <div class="card">
+            <div class="card-image">
+              <img src="Images/Cruises/5.webp">
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Cruises</p>
+              <h2 class="card-title">Lorem ipsum dolor </h2>
+              <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+            <div class="card-price">$739</div>
+          </div>
+
+            <div class="card">
+            <div class="card-image">
+              <img src="Images/Cruises/6.webp">
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Cruises</p>
+              <h2 class="card-title">Lorem ipsum dolor </h2>
+              <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+            <div class="card-price">$969</div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="Images/Cruises/7.webp">
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Cruises</p>
+              <h2 class="card-title">Lorem ipsum dolor </h2>
+              <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+            <div class="card-price">$856</div>
+          </div>
+
+            <div class="card">
+            <div class="card-image">
+              <img src="Images/Cruises/8.webp">
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Cruises</p>
+              <h2 class="card-title">Lorem ipsum dolor </h2>
+              <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+            <div class="card-price">$739</div>
+          </div>
+
+            <div class="card">
+            <div class="card-image">
+              <img src="Images/Cruises/9.webp">
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Cruises</p>
+              <h2 class="card-title">Lorem ipsum dolor </h2>
+              <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+            <div class="card-price">$659</div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="Images/Cruises/10.webp">
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Cruises</p>
+              <h2 class="card-title">Lorem ipsum dolor </h2>
+              <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+            <div class="card-price">$866</div>
+          </div>
+
+            <div class="card">
+            <div class="card-image">
+              <img src="Images/Cruises/11.webp">
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Cruises</p>
+              <h2 class="card-title">Lorem ipsum dolor </h2>
+              <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+            <div class="card-price">$799</div>
+          </div>
+
+            <div class="card">
+            <div class="card-image">
+              <img src="Images/Cruises/12.webp">
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Cruises</p>
+              <h2 class="card-title">Lorem ipsum dolor </h2>
+              <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+            <div class="card-price">$854</div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img src="Images/Cruises/13.webp">
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Cruises</p>
+              <h2 class="card-title">Lorem ipsum dolor </h2>
+              <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+            <div class="card-price" style="margin-bottom: 5%;">$689</div>
+          </div>
+
+            <div class="card">
+            <div class="card-image">
+              <img src="Images/Cruises/14.webp">
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Cruises</p>
+              <h2 class="card-title">Lorem ipsum dolor </h2>
+              <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.</p>
+            </div>
+            <div class="card-price" style="margin-bottom: 5%;">$799</div>
+          </div>
+
+            <div class="card">
+            <div class="card-image">
+              <img src="Images/Cruises/15.webp">
+            </div>
+            <div class="card-text">
+              <p class="card-meal-type">Cruises</p>
+              <h2 class="card-title">Lorem ipsum dolor </h2>
+              <p class="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo./p>
+            </div>
+            <div class="card-price" style="margin-bottom: 5%;">$856</div>
+          </div>
+
+            
+          
+          </div>
+      </section>
+</body>
+</html>

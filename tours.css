@@ -1,0 +1,136 @@
+.top{
+    text-align: center;
+    margin-top: 15vh;
+    color: #262231b6;
+    margin-bottom: 10vh;
+}
+
+.tour-links {    
+    display: absolute ;
+    align-items: center;
+    justify-content: center;    
+    height: 100vh;
+    margin-left: 10%;  
+  }
+  
+  .tours-container {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.25);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);  
+    padding: 38px;  
+    filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 8%;
+    margin-bottom: 5%;
+    
+  }
+  
+  .tour-card {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .tour-image {
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255, 0.255)
+  }
+  
+  h1{
+    font-family: 'Righteous', sans-serif;
+    color: rgba(255,255,255,0.98);
+    text-transform: uppercase;
+    font-size: 2.4rem;
+  }
+  
+  .tourcard {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 150%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .cena{
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    text-align: right;
+    font-size: 1.3rem;
+  }
+  
+  .button-wrapper-tours{
+    display: inline-flex;
+    margin-top: 18px;
+  }
+  
+  .button {
+    border: 0.5px rgba(255, 255, 255, 0.4) solid;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 12px;
+    font-size: 0.8rem;  
+    letter-spacing: 1px;  
+    cursor: pointer;
+    margin-left: 60%;
+    width: 50%;
+    text-align: center;
+  }
+  
+  
+  .fills {
+    background: rgba(0, 212, 255, 0.9);
+    color: rgba(255,255,255,0.95);
+    filter: drop-shadow(0);
+    font-weight: bold;
+    transition: all .3s ease; 
+  }
+  
+  .fills:hover, .more-about:hover{
+    transform: scale(1.125);  
+    border-color: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+    transition: all .3s ease;    
+  }
+
+  .more-about{
+    border: 0.5px rgba(0, 0, 0, 0.4) solid;
+    padding: 12px 24px;
+    border-radius: 24px;
+    font-size: 12px;
+    font-size: 0.8rem;  
+    letter-spacing: 1px;  
+    cursor: pointer;
+    margin-left: -120%;
+    background: rgba(223, 250, 255, 0.9);
+    color: rgba(0, 0, 0, 0.95);
+    filter: drop-shadow(0);
+    font-weight: bold;
+    transition: all .3s ease; 
+    width: 50%;
+  }
+  
+  .tours-on-image-header{
+    display: flow-root;
+    text-align: center;
+    font-size: 56px;
+    color: rgba(230, 230, 230, 0.8);
+    font-weight: 700; 
+    margin-top: -30%; 
+    margin-bottom: 18%;
+    text-shadow: 0 0 0.2em #87f, 0 0 0.2em #87f, 0 0 0.2em #87f;
+  }
+
+
+
+  

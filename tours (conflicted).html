@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="/assets/css/stylesheet.css?v=1">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="tours.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://js.arcgis.com/4.26/"></script>
+    <title>Vacation time</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href='index.html' class="menu-nav"><i class="fas fa-home"></i></a></li>
+      <li><a href='gallery.html' class="menu-nav">Gallery</a>
+        <ul>          
+          <li><a href="australia.html" class="menu-nav">Australia</a></li>
+          <li><a href="bali.html" class="menu-nav">Bali</a></li>
+          <li><a href="canada.html" class="menu-nav">Canada</a></li>
+          <li><a href="caraibes.html" class="menu-nav">Caraibes</a></li>
+          <li><a href="dominikana.html" class="menu-nav">Dominikana</a></li>
+          <li><a href="kuba.html" class="menu-nav">Kuba</a></li>
+          <li><a href="malta.html" class="menu-nav">Malta</a></li>
+          <li><a href="philippines.html" class="menu-nav">Philippines</a></li>
+          <li><a href="thailand.html" class="menu-nav">Thailand</a></li>
+          <li><a href="usa.html" class="menu-nav">USA</a></li>  
+        </ul>
+      </li>
+      <li><a href='cruises.html' class="menu-nav">Cruises</a></li>
+      <li><a href='tours.html' class="menu-nav">Tours</a></li>
+      <li><a href='blog.html' class="menu-nav">Blog</a></li>
+    </ul>
+  </nav>
+
+    <article style="background-image: url(Images/article-background.jpg); padding-top: 88vh; background-repeat: no-repeat;">
+       <div class="dropdowns-background" style="background: linear-gradient(60deg, #3c5194, #262231b6); filter: drop-shadow(10px 20px 5px rgba(0,0,0,0.25));">
+          <p style="text-align: center; font-size: 40px; font-weight: 700; color:rgb(198, 228, 241); padding-top: 2%;">Enjoy Your Vacation With Us</p>
+          <p style="text-align: center; font-size: 32px; font-weight: 700; color:rgb(198, 228, 241);">Destinations</p>
+          
+            <div class="dropdown">
+            <div class="select">
+              <span class="selected" id="myDropdown" onclick="myFunction()">Poland</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="destination" id="from">
+              <li>Australia</li>
+              <li>Bali</li>
+              <li>Canada</li>
+              <li>Caraibes</li>
+              <li>Dominikana</li>
+              <li>Kuba</li>
+              <li>Malta</li>
+              <li class="active">Poland</li>
+              <li>Philippines</li>
+              <li>Thailand</li>
+              <li>USA</li>
+            </ul>
+          </div>
+  
+          <div class="dropdown">
+            <div class="select">
+              <span class="selected" id="myDropdown" onclick="myFunction()">Malta</span>
+              <div class="caret"></div>
+            </div>
+            <ul class="destination" id="where">
+              <li>Australia</li>
+              <li>Bali</li>
+              <li>Canada</li>
+              <li>Caraibes</li>
+              <li>Dominikana</li>
+              <li>Kuba</li>
+              <li class="active">Malta</li>
+              <li>Poland</li>
+              <li>Philippines</li>
+              <li>Thailand</li>
+              <li>USA</li>
+            </ul>
+          </div>
+  
+          <button type="submit" class="search">Szukaj</button>
+          </div>
+  
+      </article>
+
+      <h1 class="top">Top Destinations</h1>
+
+      <section class="tour-links" style="margin-top: 5vh;">
+        <div class="tours-container">
+            <div class="tour-card">
+              <div class="tour-image" style="background-image: url(Images/Caraibes/12.jpg);"></div>
+              <h1>Caraibes</h1>
+              <p class="tourcard">Lorem ipsum dolor sit amet, <br/>
+                consectetur adipiscing elit.</p>
+                <p class="cena">$1600</p>
+             </div>
+             <div class="button-wrapper-tours">
+               <button class="button fills" id="button-fills-caraibes">Loty</button>
+               <button class="more-about-caraibes">More</button>
+             </div>
+           </div>
+
+           <div class="tours-container">
+            <div class="tour-card">
+              <div class="tour-image" style="background-image: url(Images/Philippines/25.jpg);"> </div>
+              <h1>Philippines</h1>
+              <p class="tourcard">Lorem ipsum dolor sit amet, <br/>
+                consectetur adipiscing elit.</p>
+                <p class="cena">$1200</p>
+             </div>
+             <div class="button-wrapper-tours">
+               <button class="button fills" id="button-fills-philippines">Loty</button>
+               <button class="more-about-philippines">More</button>
+             </div>
+           </div>
+
+           <div class="tours-container">
+            <div class="tour-card">
+              <div class="tour-image" style="background-image: url(Images/Malta/12.jpg);"> </div>
+              <h1>Malta</h1>
+              <p class="tourcard">Lorem ipsum dolor sit amet, <br/>
+                consectetur adipiscing elit.</p>
+                <p class="cena">$500</p>
+             </div>
+             <div class="button-wrapper-tours">
+               <button class="button fills" id="button-fills-malta">Loty</button>
+               <button class="more-about-malta">More</button>
+             </div>
+           </div>
+
+           <div class="tours-container">
+            <div class="tour-card">
+              <div class="tour-image" style="background-image: url(Images/Bali/3.jpg);"> </div>
+              <h1>Bali</h1>
+              <p class="tourcard">Lorem ipsum dolor sit amet, <br/>
+                consectetur adipiscing elit.</p>
+                <p class="cena">$2500</p>
+             </div>
+             <div class="button-wrapper-tours">
+               <button class="button fills" id="button-fills-bali">Loty</button>
+               <button class="more-about-bali">More</button>
+             </div>
+           </div>
+
+           <div class="tours-container">
+            <div class="tour-card">
+              <div class="tour-image" style="background-image: url(Images/Canada/18.jpg);"> </div>
+              <h1>Canada</h1>
+              <p class="tourcard">Lorem ipsum dolor sit amet, <br/>
+                consectetur adipiscing elit.</p>
+                <p class="cena">$3000</p>
+             </div>
+             <div class="button-wrapper-tours">
+               <button class="button fills" id="button-fills-canada">Loty</button>
+               <button class="more-about-canada">More</button>
+             </div>
+           </div>
+
+           <div class="tours-container">
+            <div class="tour-card">
+              <div class="tour-image" style="background-image: url(Images/Australia/6.jpg);"> </div>
+              <h1>Australia</h1>
+              <p class="tourcard">Lorem ipsum dolor sit amet, <br/>
+                consectetur adipiscing elit.</p>
+                <p class="cena">$2300</p>
+             </div>
+             <div class="button-wrapper-tours">
+               <button class="button fills" id="button-fills-australia">Loty</button>
+               <button class="more-about-australia">More</button>
+             </div>
+           </div>
+
+           <div class="tours-container">
+            <div class="tour-card">
+              <div class="tour-image" style="background-image: url(Images/USA/24.jpg);"> </div>
+              <h1>USA</h1>
+              <p class="tourcard">Lorem ipsum dolor sit amet, <br/>
+                consectetur adipiscing elit.</p>
+                <p class="cena">$3000</p>
+             </div>
+             <div class="button-wrapper-tours">
+               <button class="button fills" id="button-fills-usa">Loty</button>
+               <button class="more-about-usa">More</button>
+             </div>
+           </div>
+
+           <div class="tours-container">
+            <div class="tour-card">
+              <div class="tour-image" style="background-image: url(Images/Dominikana/12.jpg);"> </div>
+              <h1>Dominikana</h1>
+              <p class="tourcard">Lorem ipsum dolor sit amet, <br/>
+                consectetur adipiscing elit.</p>
+                <p class="cena">$1500</p>
+             </div>
+             <div class="button-wrapper-tours">
+               <button class="button fills" id="button-fills-dominikana">Loty</button>
+               <button class="more-about-dominikana">More</button>
+             </div>
+           </div>
+
+           <div class="tours-container">
+            <div class="tour-card">
+              <div class="tour-image" style="background-image: url(Images/Thailand/7.jpg);"> </div>
+              <h1>Thailand</h1>
+              <p class="tourcard">Lorem ipsum dolor sit amet, <br/>
+                consectetur adipiscing elit.</p>
+                <p class="cena">$1800</p>
+             </div>
+             <div class="button-wrapper-tours">
+               <button class="button fills" id="button-fills-thailand">Loty</button>
+               <button class="more-about-caraibes">More</button>
+             </div>
+           </div>
+
+      </section>
+
+      
+
+      
+<script>
+  var buttonFillsCaraibes = document.getElementById("button-fills-caraibes")
+  buttonFillsCaraibes.onclick = function(){
+    window.open("https://www.skyscanner.pl/loty-do/bq/tanie-loty-do-karaiby-holenderskie.html", "_blank");
+  };
+
+
+
+  var buttonFillsPhilippines = document.getElementById("button-fills-philippines")
+  buttonFillsPhilippines.onclick = function(){
+    window.open("https://www.skyscanner.pl/loty-do/ph/tanie-loty-do-filipiny.html", "_blank");
+  };
+
+
+
+  var buttonFillsMalta = document.getElementById("button-fills-malta")
+  buttonFillsMalta.onclick = function(){
+    window.open("https://www.skyscanner.pl/loty-do/mt/tanie-loty-do-malta.html", "_blank");
+  };
+
+
+
+  var buttonFillsBali = document.getElementById("button-fills-bali")
+  buttonFillsBali.onclick = function(){
+    window.open("https://www.skyscanner.pl/loty-do/dps/tanie-loty-do-bali-denpasar-lotnisko.html", "_blank");
+  };
+
+
+
+  var buttonFillsCanada = document.getElementById("button-fills-canada")
+  buttonFillsCanada.onclick = function(){
+    window.open("https://www.skyscanner.pl/loty-do/ca/tanie-loty-do-kanada.html", "_blank");
+  };
+
+
+
+  var buttonFillsAustralia = document.getElementById("button-fills-australia")
+  buttonFillsAustralia.onclick = function(){
+    window.open("https://www.skyscanner.pl/loty-do/au/tanie-loty-do-australia.html", "_blank");
+  };
+
+
+
+  var buttonFillsUsa = document.getElementById("button-fills-usa")
+  buttonFillsUsa.onclick = function(){
+    window.open("https://www.skyscanner.pl/loty-do/us/tanie-loty-do-stany-zjednoczone.html", "_blank");
+  };
+
+
+
+  var buttonFillsDominikana = document.getElementById("button-fills-dominikana")
+  buttonFillsDominikana.onclick = function(){
+    window.open("https://www.skyscanner.pl/loty-do/do/tanie-loty-do-dominikana.html", "_blank");
+  };
+
+
+
+  var buttonFillsThailand = document.getElementById("button-fills-thailand")
+  buttonFillsThailand.onclick = function(){
+    window.open("https://www.skyscanner.pl/loty-do/th/tanie-loty-do-tajlandia.html", "_blank");
+  };
+</script> 
+
+<script src="script.js"></script>
+</body>
+</html>

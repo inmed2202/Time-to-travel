@@ -1,0 +1,21 @@
+.classic-blog-design {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    
+  }
+
+  .bg-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+   hr{
+    width: 95%;
+   }
+
+
+   
